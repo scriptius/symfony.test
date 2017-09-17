@@ -23,7 +23,7 @@ class AuthCheckController extends Controller
                 return true;
             } else {
                 $response = new Response();
-                $response->setStatusCode(301);
+                $response->setStatusCode(401);
                 $response->send();
                 die;
             }
